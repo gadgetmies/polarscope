@@ -1,0 +1,20 @@
+{
+  "name": "polarscope",
+  "version": "0.1.0",
+  "description": "Tool for finding polar alignment with an iPhone",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'http-server docs' 'ngrok http -bind-tls=true localhost:8080'",
+    "deploy": "gh-pages -d docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gadgetmies",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.5.1"
+  }
+}
